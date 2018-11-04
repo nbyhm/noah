@@ -20,6 +20,7 @@
 			<version>1.0.0</version>
 		</dependency>
 
+		<!-- 增加依赖覆盖默认内嵌的Tomcat依赖 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-tomcat</artifactId>
