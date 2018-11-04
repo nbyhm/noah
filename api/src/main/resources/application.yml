@@ -37,6 +37,10 @@ spring:
   thymeleaf:
     cache: false
 
+  mvc:
+    favicon:
+      enabled: false
+
 #noah配置
 noah:
   redis:
