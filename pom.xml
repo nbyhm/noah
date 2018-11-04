@@ -36,7 +36,6 @@
 		<commons.codec.version>1.10</commons.codec.version>
 
 		<poi.version>3.13</poi.version>
-		<swagger.version>2.7.0</swagger.version>
 		<okhttp.version>3.9.0</okhttp.version>
 		<okio.versioin>1.13.0</okio.versioin>
 		<hutool.version>4.0.9</hutool.version>
@@ -62,7 +61,7 @@
 			<artifactId>spring-boot-starter-tomcat</artifactId>
 			<!--打包的时候可以不用包进去，别的设施会提供。事实上该依赖理论上可以参与编译，测试，运行等周期。
         相当于compile，但是打包阶段做了exclude操作 打包时将compile改为provided   -->
-			<scope>compile</scope>
+			<scope>provided</scope>
 		</dependency>
 
 		<!-- aop依赖 -->
@@ -280,18 +279,6 @@
 		</dependency>
 
 		<dependency>
-			<groupId>io.springfox</groupId>
-			<artifactId>springfox-swagger2</artifactId>
-			<version>${swagger.version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>io.springfox</groupId>
-			<artifactId>springfox-swagger-ui</artifactId>
-			<version>${swagger.version}</version>
-		</dependency>
-
-		<dependency>
 			<groupId>com.squareup.okhttp3</groupId>
 			<artifactId>okhttp</artifactId>
 			<version>${okhttp.version}</version>
@@ -319,7 +306,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
-			<optional>true</optional>
+			<optional>false</optional>
 		</dependency>
 
 	</dependencies>

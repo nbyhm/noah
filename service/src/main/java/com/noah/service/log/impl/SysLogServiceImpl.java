@@ -4,7 +4,7 @@ import com.noah.dao.model.SysLog;
 import com.noah.service.base.impl.BaseService;
 import com.noah.service.log.SysLogService;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;
 
